@@ -27,3 +27,28 @@ window.onload = function() {
 [百度](http://baidu.com)
 
 <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
+---
+### git command
+
+- git init(将本地文件夹初始化为一个仓库)
+- git add .(也可以是其他的要添加的文件)
+- git commit -a -m "xxx" 
+- git remote add origin 地址(xxxx.git)
+- git push
+- git pull 地址
+- git clone 地址
+- git status
+- git log
+- git branc查看分支
+- git branch <name> 创建分支
+- git branch -d <name> 删除分支
+- git checkout <name> 切换分支
+- git checkout -b <name>创建+切换分支
+- git merge <branchName> 将谬矣分支合并到当前分支
+- and so on
+
+---
+### svn
+**TortoiseSVN**
+
+

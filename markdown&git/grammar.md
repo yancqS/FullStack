@@ -35,7 +35,7 @@ window.onload = function() {
 - git commit -a -m "xxx" 
 - git remote add origin 地址(xxxx.git)
 - git push
-- git pull 地址
+- git pull 地址 (更新到本地)
 - git clone 地址
 - git status
 - git log
@@ -50,5 +50,7 @@ window.onload = function() {
 ---
 ### svn
 **TortoiseSVN**
-
+- svn checkout 类似于 git clone
+- svn commit 类似于 git add + git commit + git push
+- svn update 类似于 git pull
 

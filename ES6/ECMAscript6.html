@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ES6</title>
+    <script src="./static/jquery-3.1.1.js"></script>
 </head>
 <body>
 <script>
@@ -81,8 +82,9 @@
 
     /*
     * 数组: map(映射) filter(过滤) forEach(遍历) reduce(汇总) (every some...)
-    * 注意: forEach 和 map 的区别是:forEach 对数组中的每一项运行指定的函数，这个方法没有返回值;
-    * map 对数组中的每一项运行指定的函数, 返回每次函数调用的结果组成的数组。
+    * 注意: forEach 和 map 的区别是:
+    *   forEach 对数组中的每一项运行指定的函数，这个方法没有返回值;
+    *   map 对数组中的每一项运行指定的函数, 返回每次函数调用的结果组成的数组。
     * */
 
     /*let arr = [12, 5, 6, 8, 9, 3, 5];
@@ -201,6 +203,28 @@
     vip.sayName();
     vip.showLevel();
     */
+
+    /*
+    * 解决异步回调地狱: promise
+    * */
+    let p = new Promise((resolve, reject) => {
+        $.ajax({
+            url: "./static/data.txt",
+            dataType: "json",
+            success(data) {
+                resolve(data);
+            },
+            error(err) {
+                reject(err);
+            }
+        })
+    });
+    p.then((data) => {
+        console.log(data);
+    }, (err) => {
+        console.log(err);
+    })
+
 
 </script>
 </body>

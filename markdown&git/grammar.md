@@ -44,7 +44,7 @@ window.onload = function() {
 - git branch -d <name> 删除分支
 - git checkout <name> 切换分支
 - git checkout -b <name>创建+切换分支
-- git merge <branchName> 将谬矣分支合并到当前分支
+- git merge <branchName> 将某一分支合并到当前分支
 - and so on
 
 ---

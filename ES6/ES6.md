@@ -14,6 +14,7 @@
 >> - filter
 >> - forEach
 >> - reduce
+>> - 解构赋值
 - 字符串
 >> - startsWith()
 >> - endsWith()
@@ -27,7 +28,7 @@ class本质还是一个函数，可以看着是一个语法糖
 >> - export
 >> - export default
 - Promise
-- generator/yeild
+- generator/yield
 - async/await
 
 兼容性: 靠编译来解决(babel)

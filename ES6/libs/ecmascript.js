@@ -1,3 +1,5 @@
+"use strict";
+
 /*
    * var 的缺点
    * 1. 重复定义不报错
@@ -233,7 +235,6 @@ Promise.all([
     console.log(err);
 });*/
 
-
 /*function timeout(ms) {
     return new Promise((resolve,reject)=>{
         setTimeout(resolve,ms,"done");//setTimeout、setInterval第三个及以后的参数可以作为resolve函数的参数
@@ -258,14 +259,19 @@ co(function* getInfo() {
     alert("get all");
 });*/
 
-//do表达式
-let printSum = function (...arr) {
+var printSum = function printSum() {
+    for (var _len = arguments.length, arr = Array(_len), _key = 0; _key < _len; _key++) {
+        arr[_key] = arguments[_key];
+    }
+
     console.log(arr);
-    console.log(`sum is ${arr.reduce((a, b) => a + b)}`);
+    console.log("sum is " + arr.reduce(function (a, b) {
+        return a + b;
+    }));
 };
-let a = 3;
-let b = do {
-    let c = 5;
-    c * c + c;
-};
+var a = 3;
+var b = function () {
+    var c = 5;
+    return c * c + c;
+}();
 printSum(a, b);

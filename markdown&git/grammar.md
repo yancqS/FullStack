@@ -3,6 +3,7 @@
 ## 二级标题
 ### 三级标题
 #### 四级标题
+
 - 列表
 - 列表1
 - 列表2
@@ -10,24 +11,61 @@
 2. 有序2
 3. 有序3
 
-*斜体*
-**加粗**
-***斜体加粗***
-~~加删除线~~
+- 一级无序列表内容
+   - 二级无序列表内容
+   - 二级无序列表内容
+   - 二级无序列表内容
+1. 一级有序列表内容
+   1. 二级有序列表内容
+   2. 二级有序列表内容
+   3. 二级有序列表内容
+      1. 三级有序列表内容
+      2. 三级有序列表内容
+      3. 三级有序列表内容
+
+### 表格
+
+| 表头 | 表头 | 表头|
+| --- | :-:  |--: |
+|默认居左| 我是居中| 我是居右 |
+|left   |center | right  |
+
+
+### 流程图
+```mermaid
+graph TB
+A[Apple]-->B[Boy]
+A---C(Cat)
+B.->D((Dog))
+C==喵==>D
+style A fill:#2ff,fill-opacity:0.1,stroke:#faa,stroke-width:4px
+style D stroke:#000,stroke-width:8px;
+```
+
+
+
+- *斜体*
+- **加粗**
+- ***斜体加粗***
+- ~~加删除线~~
+
 >>引用
 >>>引用1
 >>>>引用2
+
 ```javascript
 window.onload = function() {
   console.log("Fine");
 }
 ```
-![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
-
 [百度](http://baidu.com)
 
-<a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
+<a href="https://www.jianshu.com/" target="_blank">简书</a>
 ---
+### 添加图片
+
+![钢铁侠](https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1557797631&di=daa94a2921e883ce8fa4446b2164612c&src=http://img1.gtimg.com/hb/pics/hv1/248/180/2182/141930698.jpg "钢铁侠")
+
 ### git command
 
 - git init(将本地文件夹初始化为一个仓库)

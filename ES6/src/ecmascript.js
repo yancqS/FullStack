@@ -60,7 +60,7 @@ function add(a, b, c=4) {
 add(1,2);*/
 
 /*参数扩展
-function add(a,b,...arg) {
+function add(a,b,...arg) {  //arg是一个数组
     console.log(a,b);
     console.log(...arg);
     console.log(arguments);
@@ -259,6 +259,7 @@ co(function* getInfo() {
 });*/
 
 //do表达式
+/*
 let printSum = function (...arr) {
     console.log(arr);
     console.log(`sum is ${arr.reduce((a, b) => a + b)}`);
@@ -268,4 +269,5 @@ let b = do {
     let c = 5;
     c * c + c;
 };
-printSum(a, b);
+printSum(a, b);*/
+

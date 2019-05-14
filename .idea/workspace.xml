@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57cf62a6-c691-4daa-b38a-6e0e93ff130d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/src/ecmascript.js" afterPath="$PROJECT_DIR$/ES6/src/ecmascript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markdown&amp;git/grammar.md" afterPath="$PROJECT_DIR$/markdown&amp;git/grammar.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +17,10 @@
         <entry file="file://$PROJECT_DIR$/markdown&amp;git/grammar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="408">
-                <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+              <first_editor relative-caret-position="288">
+                <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
                 <folding>
-                  <marker date="1557800358778" expanded="true" signature="629:655" ph="{...}" />
+                  <marker date="1557800748314" expanded="true" signature="576:602" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -222,12 +219,12 @@
       <workItem from="1557630544693" duration="2889000" />
       <workItem from="1557717517945" duration="4096000" />
       <workItem from="1557794147311" duration="2252000" />
-      <workItem from="1557798545471" duration="1833000" />
+      <workItem from="1557798545471" duration="2234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102760000" />
+    <option name="totallyTimeSpent" value="103161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,10 +560,10 @@
     <entry file="file://$PROJECT_DIR$/markdown&amp;git/grammar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="408">
-            <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <first_editor relative-caret-position="288">
+            <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             <folding>
-              <marker date="1557800358778" expanded="true" signature="629:655" ph="{...}" />
+              <marker date="1557800748314" expanded="true" signature="576:602" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor>

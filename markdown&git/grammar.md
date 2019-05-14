@@ -25,21 +25,22 @@
 
 ### 表格
 
-| 表头 | 表头 | 表头|
-| --- | :-:  |--: |
+| 表头  | 表头  | 表头|
+| ---  | :-:  |--: |
 |默认居左| 我是居中| 我是居右 |
 |left   |center | right  |
 
 
 ### 流程图
-```mermaid
-graph TB
-A[Apple]-->B[Boy]
-A---C(Cat)
-B.->D((Dog))
-C==喵==>D
-style A fill:#2ff,fill-opacity:0.1,stroke:#faa,stroke-width:4px
-style D stroke:#000,stroke-width:8px;
+```flow
+st=>start:开始
+op=>operation:输入x
+op2=>operation:输入y
+op3=>operation:计算z=x+y
+e=>end:输出z
+
+st->op->op2->op3
+op3->e
 ```
 
 

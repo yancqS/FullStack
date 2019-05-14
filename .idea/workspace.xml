@@ -17,10 +17,10 @@
         <entry file="file://$PROJECT_DIR$/markdown&amp;git/grammar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+              <first_editor relative-caret-position="264">
+                <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
                 <folding>
-                  <marker date="1557800748314" expanded="true" signature="576:602" ph="{...}" />
+                  <marker date="1557837350339" expanded="true" signature="682:708" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -134,6 +134,11 @@
             <path>
               <item name="FullStack" type="b2602c69:ProjectViewProjectNode" />
               <item name="FullStack" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ES6" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FullStack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="markdown&amp;git" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -219,12 +224,12 @@
       <workItem from="1557630544693" duration="2889000" />
       <workItem from="1557717517945" duration="4096000" />
       <workItem from="1557794147311" duration="2252000" />
-      <workItem from="1557798545471" duration="2234000" />
+      <workItem from="1557798545471" duration="9169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103161000" />
+    <option name="totallyTimeSpent" value="110096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/ES6.md" />
     <entry file="file://$PROJECT_DIR$/ES6Test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -557,13 +561,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/ES6.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-452">
+            <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/markdown&amp;git/grammar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <first_editor relative-caret-position="264">
+            <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
             <folding>
-              <marker date="1557800748314" expanded="true" signature="576:602" ph="{...}" />
+              <marker date="1557837350339" expanded="true" signature="682:708" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor>

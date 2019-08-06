@@ -1,5 +1,11 @@
 "use strict";
 
+var _regenerator = require("babel-runtime/regenerator");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /*
    * var 的缺点
    * 1. 重复定义不报错
@@ -9,7 +15,7 @@
 
 /* 不能重复声明
 let a = 12;
-let a = 3;
+let a = 3;//报错
 alert(a);*/
 
 /*有块级作用域
@@ -21,7 +27,7 @@ alert(a);*/
 /*let 和 var 不同 不存在变量提升
 也可以叫做"暂时性死区TDZ"
 if(true){
-     alert(a);
+     alert(a);//报错，如果是var则是undefined
      let a = 12;
  }*/
 
@@ -62,7 +68,7 @@ function add(a, b, c=4) {
 add(1,2);*/
 
 /*参数扩展
-function add(a,b,...arg) {
+function add(a,b,...arg) {  //arg是一个数组
     console.log(a,b);
     console.log(...arg);
     console.log(arguments);
@@ -70,7 +76,7 @@ function add(a,b,...arg) {
 add(1,2,3,4,5,6);*/
 
 /*
-* 模块化(import export export default)
+* 模块化(import export/export default)
 * */
 
 /*
@@ -125,7 +131,7 @@ alert(`abc
 de`);//原样输出
 console.log(`My name is ${obj.name}, My age is ${obj.age}`);
 console.log(`${str}`);//可以是变量
-console.log(`${hello()}`);//可以使函数
+console.log(`${hello()}`);//可以是函数
 
 console.log(str.startsWith("Hello"));//true
 console.log(str.endsWith("d!"));//true
@@ -247,31 +253,49 @@ Promise.all([
 /*
 * 异步编程解决办法:Generator
 * */
-/*const co = require("co");
-const $ = require("jquery");
-co(function* getInfo() {
-    let arr = yield $.ajax("./static/data.txt");
-    console.log(arr);
-    alert("get arr");
-    let json = yield $.ajax("./static/data.json");
-    console.log(json);
-    alert("get json");
-    alert("get all");
-});*/
+var co = require("co");
+var $ = require("jquery");
+co( /*#__PURE__*/_regenerator2.default.mark(function getInfo() {
+    var arr, json;
+    return _regenerator2.default.wrap(function getInfo$(_context) {
+        while (1) {
+            switch (_context.prev = _context.next) {
+                case 0:
+                    _context.next = 2;
+                    return $.ajax("./static/data.txt");
 
-var printSum = function printSum() {
-    for (var _len = arguments.length, arr = Array(_len), _key = 0; _key < _len; _key++) {
-        arr[_key] = arguments[_key];
-    }
+                case 2:
+                    arr = _context.sent;
 
+                    console.log(arr);
+                    alert("get arr");
+                    _context.next = 7;
+                    return $.ajax("./static/data.json");
+
+                case 7:
+                    json = _context.sent;
+
+                    console.log(json);
+                    alert("get json");
+                    alert("get all");
+
+                case 11:
+                case "end":
+                    return _context.stop();
+            }
+        }
+    }, getInfo, this);
+}));
+
+//do表达式
+/*
+let printSum = function (...arr) {
     console.log(arr);
-    console.log("sum is " + arr.reduce(function (a, b) {
-        return a + b;
-    }));
+    console.log(`sum is ${arr.reduce((a, b) => a + b)}`);
 };
-var a = 3;
-var b = function () {
-    var c = 5;
-    return c * c + c;
-}();
-printSum(a, b);
+let a = 3;
+let b = do {
+    let c = 5;
+    c * c + c;
+};
+printSum(a, b);*/

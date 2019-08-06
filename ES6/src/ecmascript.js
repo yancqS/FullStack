@@ -7,7 +7,7 @@
 
 /* 不能重复声明
 let a = 12;
-let a = 3;
+let a = 3;//报错
 alert(a);*/
 
 /*有块级作用域
@@ -19,7 +19,7 @@ alert(a);*/
 /*let 和 var 不同 不存在变量提升
 也可以叫做"暂时性死区TDZ"
 if(true){
-     alert(a);
+     alert(a);//报错，如果是var则是undefined
      let a = 12;
  }*/
 
@@ -68,8 +68,10 @@ function add(a,b,...arg) {  //arg是一个数组
 add(1,2,3,4,5,6);*/
 
 /*
-* 模块化(import export export default)
+* 模块化(import export/export default)
 * */
+
+
 
 /*
 * 数组: map(映射) filter(过滤) forEach(遍历) reduce(汇总) (every some...)
@@ -123,7 +125,7 @@ alert(`abc
 de`);//原样输出
 console.log(`My name is ${obj.name}, My age is ${obj.age}`);
 console.log(`${str}`);//可以是变量
-console.log(`${hello()}`);//可以使函数
+console.log(`${hello()}`);//可以是函数
 
 console.log(str.startsWith("Hello"));//true
 console.log(str.endsWith("d!"));//true
@@ -246,7 +248,7 @@ Promise.all([
 /*
 * 异步编程解决办法:Generator
 * */
-/*const co = require("co");
+const co = require("co");
 const $ = require("jquery");
 co(function* getInfo() {
     let arr = yield $.ajax("./static/data.txt");
@@ -256,7 +258,7 @@ co(function* getInfo() {
     console.log(json);
     alert("get json");
     alert("get all");
-});*/
+});
 
 //do表达式
 /*

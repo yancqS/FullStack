@@ -70,7 +70,7 @@ window.onload = function() {
 ---
 ### 添加图片
 
-![钢铁侠](https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1557797631&di=daa94a2921e883ce8fa4446b2164612c&src=http://img1.gtimg.com/hb/pics/hv1/248/180/2182/141930698.jpg "钢铁侠")
+![皮卡丘](http://b-ssl.duitang.com/uploads/item/201209/02/20120902160411_ik2UH.jpeg "皮卡丘")
 
 ### git command
 

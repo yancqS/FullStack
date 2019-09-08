@@ -4,6 +4,58 @@ var _regenerator = require("babel-runtime/regenerator");
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
+var _asyncToGenerator2 = require("babel-runtime/helpers/asyncToGenerator");
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
+/*co(function* getInfo() {
+    let arr = yield $.ajax("./static/data.txt");
+    console.log(arr);
+    alert("get arr");
+    let json = yield $.ajax("./static/data.json");
+    console.log(json);
+    alert("get json");
+    alert("get all");
+});*/
+
+var getData = function () {
+    var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
+        var arr, json;
+        return _regenerator2.default.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        _context.next = 2;
+                        return $.ajax("./static/data.txt");
+
+                    case 2:
+                        arr = _context.sent;
+
+                        console.log(arr);
+                        alert("get arr");
+                        _context.next = 7;
+                        return $.ajax("./static/data.json");
+
+                    case 7:
+                        json = _context.sent;
+
+                        console.log(json);
+                        alert("get json");
+                        alert("get all");
+
+                    case 11:
+                    case "end":
+                        return _context.stop();
+                }
+            }
+        }, _callee, this);
+    }));
+
+    return function getData() {
+        return _ref.apply(this, arguments);
+    };
+}();
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -67,10 +119,11 @@ function add(a, b, c=4) {
 }
 add(1,2);*/
 
-/*参数扩展
-function add(a,b,...arg) {  //arg是一个数组
+/*参数扩展*/
+/*function add(a,b,...arg) {  //arg是一个数组
     console.log(a,b);
     console.log(...arg);
+    console.log(arg);
     console.log(arguments);
 }
 add(1,2,3,4,5,6);*/
@@ -255,38 +308,11 @@ Promise.all([
 * */
 var co = require("co");
 var $ = require("jquery");
-co( /*#__PURE__*/_regenerator2.default.mark(function getInfo() {
-    var arr, json;
-    return _regenerator2.default.wrap(function getInfo$(_context) {
-        while (1) {
-            switch (_context.prev = _context.next) {
-                case 0:
-                    _context.next = 2;
-                    return $.ajax("./static/data.txt");
-
-                case 2:
-                    arr = _context.sent;
-
-                    console.log(arr);
-                    alert("get arr");
-                    _context.next = 7;
-                    return $.ajax("./static/data.json");
-
-                case 7:
-                    json = _context.sent;
-
-                    console.log(json);
-                    alert("get json");
-                    alert("get all");
-
-                case 11:
-                case "end":
-                    return _context.stop();
-            }
-        }
-    }, getInfo, this);
-}));
-
+getData().then(function (res) {
+    console.log(res);
+}, function (err) {
+    console.log(err);
+});
 //do表达式
 /*
 let printSum = function (...arr) {

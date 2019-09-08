@@ -59,10 +59,11 @@ function add(a, b, c=4) {
 }
 add(1,2);*/
 
-/*参数扩展
-function add(a,b,...arg) {  //arg是一个数组
+/*参数扩展*/
+/*function add(a,b,...arg) {  //arg是一个数组
     console.log(a,b);
     console.log(...arg);
+    console.log(arg);
     console.log(arguments);
 }
 add(1,2,3,4,5,6);*/
@@ -70,7 +71,6 @@ add(1,2,3,4,5,6);*/
 /*
 * 模块化(import export/export default)
 * */
-
 
 
 /*
@@ -250,7 +250,7 @@ Promise.all([
 * */
 const co = require("co");
 const $ = require("jquery");
-co(function* getInfo() {
+/*co(function* getInfo() {
     let arr = yield $.ajax("./static/data.txt");
     console.log(arr);
     alert("get arr");
@@ -258,7 +258,21 @@ co(function* getInfo() {
     console.log(json);
     alert("get json");
     alert("get all");
-});
+});*/
+
+/*
+* 解决异步回调地狱的终极解决办法： async/await
+* */
+async function getData() {
+    let arr = await $.ajax("./static/data.txt");
+    console.log(arr);
+    alert("get arr");
+    let json = await $.ajax("./static/data.json");
+    console.log(json);
+    alert("get json");
+    alert("get all");
+}
+getData();
 
 //do表达式
 /*
